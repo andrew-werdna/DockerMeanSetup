@@ -26,5 +26,5 @@ Starting out
 ------------
 
 When you exec into the running nodeapp container, you will land in your mount folder.
-Just run `express .` and [express-generator](https://expressjs.com/en/starter/generator.html) will output the scaffolding for an
-easy start
+Just run `express [options] .` and [express-generator](https://expressjs.com/en/starter/generator.html)
+will output the scaffolding for an easy start
