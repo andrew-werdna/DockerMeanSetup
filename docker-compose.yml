@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  db:
+    image: mongo:latest
+    container_name: mongodb
+    build: ./builds/mongo/
+    ports:
+      - 27017:27017
+
+  app:
+    image: node:6.10
+    container_name: nodeapp
+    build: ./builds/node/
+    ports:
+      - 8888:8888
+      - 3000:3000
+    volumes:
+      - ../application:/home/nodeapp
+    tty: true
+    depends_on:
+      - db
