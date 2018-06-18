@@ -10,7 +10,7 @@ services:
       - 27017:27017
 
   app:
-    image: node:6.10
+    image: node:8.11.3-jessie
     container_name: nodeapp
     build: ./builds/node/
     ports:
